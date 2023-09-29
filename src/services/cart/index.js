@@ -28,6 +28,7 @@ export const getAllCartItems = async (id) => {
         headers: {
           Authorization: `Bearer ${Cookies.get("token")}`,
         },
+        mode: "no-cors",
       }
     );
 

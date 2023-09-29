@@ -28,6 +28,7 @@ export const getAllAdminProducts = async () => {
       {
         method: "GET",
         cache: "no-store",
+        mode: "no-cors",
       }
     );
 
@@ -66,6 +67,7 @@ export const deleteAProduct = async (id) => {
       headers: {
         Authorization: `Bearer ${Cookies.get("token")}`,
       },
+      mode: "no-cors",
     });
 
     const data = await res.json();
@@ -83,6 +85,7 @@ export const productByCategory = async (id) => {
       {
         method: "GET",
         cache: "no-store",
+        mode: "no-cors",
       }
     );
 
@@ -101,6 +104,7 @@ export const productById = async (id) => {
       {
         method: "GET",
         cache: "no-store",
+        mode: "no-cors",
       }
     );
 
