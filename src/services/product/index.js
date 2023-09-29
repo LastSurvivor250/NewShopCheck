@@ -23,10 +23,13 @@ export const addNewProduct = async (formData) => {
 
 export const getAllAdminProducts = async () => {
   try {
-    const res = await fetch("http://localhost:3000/api/admin/all-products", {
-      method: "GET",
-      cache: "no-store",
-    });
+    const res = await fetch(
+      "http://new-shop-check-69pzdfoom-lastsurvivor250.vercel.app/api/admin/all-products",
+      {
+        method: "GET",
+        cache: "no-store",
+      }
+    );
 
     const data = await res.json();
 
@@ -76,7 +79,7 @@ export const deleteAProduct = async (id) => {
 export const productByCategory = async (id) => {
   try {
     const res = await fetch(
-      `http://localhost:3000/api/admin/product-by-category?id=${id}`,
+      `http://new-shop-check-69pzdfoom-lastsurvivor250.vercel.app/api/admin/product-by-category?id=${id}`,
       {
         method: "GET",
         cache: "no-store",
@@ -94,7 +97,7 @@ export const productByCategory = async (id) => {
 export const productById = async (id) => {
   try {
     const res = await fetch(
-      `http://localhost:3000/api/admin/product-by-id?id=${id}`,
+      `http://new-shop-check-69pzdfoom-lastsurvivor250.vercel.app/api/admin/product-by-id?id=${id}`,
       {
         method: "GET",
         cache: "no-store",
