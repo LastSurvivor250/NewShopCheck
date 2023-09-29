@@ -22,7 +22,7 @@ export const addToCart = async (formData) => {
 export const getAllCartItems = async (id) => {
   try {
     const res = await fetch(
-      `https:/new-shop-check-k00x4ac84-lastsurvivor250.vercel.app/api/cart/all-cart-items?id=${id}`,
+      `https://new-shop-check-k00x4ac84-lastsurvivor250.vercel.app/api/cart/all-cart-items?id=${id}`,
       {
         method: "GET",
         headers: {
