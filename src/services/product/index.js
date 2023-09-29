@@ -24,7 +24,7 @@ export const addNewProduct = async (formData) => {
 export const getAllAdminProducts = async () => {
   try {
     const res = await fetch(
-      "http://new-shop-check-69pzdfoom-lastsurvivor250.vercel.app/api/admin/all-products",
+      "https://new-shop-check-69pzdfoom-lastsurvivor250.vercel.app/api/admin/all-products",
       {
         method: "GET",
         cache: "no-store",
